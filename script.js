@@ -8,18 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
             
             textResultat.value += bouton.value;
             console.log(bouton.value)
-            // console.log(typeof(textResultat.value))
-
-            let result = [textResultat.value]
+            console.log(typeof(textResultat.value))
             
 
+            let result = [textResultat.value]
             console.log(typeof(result))
             console.log(result)
-
-            switch(bouton.value) {
+    
+            switch(result) {
                 case "C":
                     textResultat.value = "" ;
                 break;
+                case "+":
+                    result = +;
+                    
                 case "=":
                     textResultat.value = console.log(textResultat.value);
                     break;
@@ -30,8 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 })
 
+// function add(valeur){
+//     let sum = 0
+//     if(valeur === "+")
+//     sum += boutons.value
+//     return sum
+// }
 
-
+// function soustrate(boutons.value) {
+//     const soustra
+// }
 
 
 
