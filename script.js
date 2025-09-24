@@ -1,50 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const boutons = document.querySelectorAll(".btn-warning")
-    console.log(boutons)
-    const textResultat = document.querySelector(".form-control")
+    let sum = 0
+    let input = document.getElementById('number-input')
 
-    boutons.forEach((bouton) => {
-        bouton.addEventListener("click", () => {
-            
-            textResultat.value += bouton.value;
-            console.log(bouton.value)
-            console.log(typeof(textResultat.value))
-            
 
-            let result = [textResultat.value]
-            console.log(typeof(result))
-            console.log(result)
-    
-            switch(result) {
-                case "C":
-                    textResultat.value = "" ;
-                break;
-                case "+":
-                    result = +;
-                    
-                case "=":
-                    textResultat.value = console.log(textResultat.value);
-                    break;
-                    
-            
-            }      
-        })
-    })
+    document.getElementById('add-button').addEventListener(
+        'click', () => {
+            console.log(sum+=input)
+        }
+    )
 })
 
-// function add(valeur){
-//     let sum = 0
-//     if(valeur === "+")
-//     sum += boutons.value
-//     return sum
-// }
+function writeNumber(imput) {
+    
+}
 
-// function soustrate(boutons.value) {
-//     const soustra
-// }
+function add (num1, num2) {
+    return num1 + num2
+}
 
+function substract (num1, num2) {
+    return num1 - num2
+}
 
+function multiply (num1, num2) {
+    return num1 * num2
+}
 
+function divide (num1, num2) {
+    return num1 / num2
+}
+
+console.log(add(8,4))
+console.log(substract(8,4))
+console.log(multiply(8,4))
+console.log(divide(8,4))
 
 
 // document.addEventListener("DOMContentLoaded", function () {
